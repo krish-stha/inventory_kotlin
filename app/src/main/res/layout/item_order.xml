@@ -6,13 +6,15 @@
     android:layout_margin="8dp"
     android:layout_height="wrap_content"
     card_view:cardCornerRadius="8dp"
-    card_view:cardElevation="4dp">
+    card_view:cardElevation="4dp"
+    android:background="#E0F7FA"> <!-- Light Cyan Blue background for card -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="#B3E5FC"> <!-- Soft Light Blue background for content area -->
 
         <TextView
             android:id="@+id/txtOrderId"
@@ -20,27 +22,31 @@
             android:layout_height="wrap_content"
             android:text="Order ID: 1234"
             android:textStyle="bold"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:textColor="#0277BD"/> <!-- Medium Blue text color -->
 
         <TextView
             android:id="@+id/txtOrderDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date: 2025-03-02"
-            android:layout_marginTop="4dp"/>
+            android:layout_marginTop="4dp"
+            android:textColor="#0277BD"/> <!-- Medium Blue text color -->
 
         <TextView
             android:id="@+id/txtTotalAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total: $100.00"
-            android:layout_marginTop="4dp"/>
+            android:layout_marginTop="4dp"
+            android:textColor="#0288D1"/> <!-- Slightly darker Blue for emphasis -->
 
         <TextView
             android:id="@+id/txtOrderStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status: Delivered"
-            android:layout_marginTop="4dp"/>
+            android:layout_marginTop="4dp"
+            android:textColor="#0288D1"/> <!-- Slightly darker Blue for emphasis -->
     </LinearLayout>
 </androidx.cardview.widget.CardView>

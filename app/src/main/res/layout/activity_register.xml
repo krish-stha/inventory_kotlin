@@ -11,6 +11,30 @@
     android:padding="24dp"
     android:background="@android:color/white">
 
+    <!-- Company name at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ff0099cc"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EZYBUY"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- First name EditText -->
     <EditText
         android:id="@+id/registerFname"
         android:layout_width="match_parent"
@@ -22,6 +46,7 @@
         android:inputType="text"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Last name EditText -->
     <EditText
         android:id="@+id/registerLName"
         android:layout_width="match_parent"
@@ -33,6 +58,7 @@
         android:inputType="text"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Address EditText -->
     <EditText
         android:id="@+id/registerAddress"
         android:layout_width="match_parent"
@@ -44,6 +70,7 @@
         android:inputType="text"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Phone number EditText -->
     <EditText
         android:id="@+id/registerContact"
         android:layout_width="match_parent"
@@ -55,6 +82,7 @@
         android:inputType="phone"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Email EditText -->
     <EditText
         android:id="@+id/registerEmail"
         android:layout_width="match_parent"
@@ -66,6 +94,7 @@
         android:inputType="textEmailAddress"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Password EditText -->
     <EditText
         android:id="@+id/registerPassword"
         android:layout_width="match_parent"
@@ -77,6 +106,7 @@
         android:inputType="textPassword"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Sign up Button -->
     <Button
         android:id="@+id/signUp"
         android:layout_width="match_parent"
@@ -88,6 +118,7 @@
         android:elevation="4dp"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Signup Result Display -->
     <TextView
         android:id="@+id/displaySignupResult"
         android:layout_width="wrap_content"
@@ -97,6 +128,7 @@
         android:gravity="center"
         android:layout_marginBottom="12dp"/>
 
+    <!-- Login Navigation Text -->
     <TextView
         android:id="@+id/btnLoginnavigate"
         android:layout_width="wrap_content"

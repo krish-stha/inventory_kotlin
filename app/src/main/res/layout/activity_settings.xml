@@ -2,7 +2,8 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"> <!-- White background for the ScrollView -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +18,8 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_back"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Back"/>
+            android:contentDescription="Back"
+            android:tint="#2563EB"/> <!-- Blue tint for the back button -->
 
         <TextView
             android:id="@+id/txtSettingsTitle"
@@ -26,7 +28,8 @@
             android:text="Settings"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp"
+            android:textColor="#2563EB"/> <!-- Blue text color for the title -->
 
         <!-- Old password field -->
         <EditText
@@ -35,7 +38,8 @@
             android:layout_height="wrap_content"
             android:hint="Old Password"
             android:inputType="textPassword"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2563EB"/> <!-- Blue hint color for the input field -->
 
         <!-- New password field -->
         <EditText
@@ -44,13 +48,16 @@
             android:layout_height="wrap_content"
             android:hint="New Password"
             android:inputType="textPassword"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#2563EB"/> <!-- Blue hint color for the input field -->
 
         <Button
             android:id="@+id/btnUpdatePassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Update Password"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#2563EB" /> <!-- Blue background tint for the button -->
+
     </LinearLayout>
 </ScrollView>
